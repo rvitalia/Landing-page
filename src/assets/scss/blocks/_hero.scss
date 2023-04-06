@@ -1,6 +1,14 @@
 .hero {
     width: 100vw;
     height: 100vh;
+    position: relative;
+}
+
+.hero__background {
+    position: absolute;
+    top: 5%;
+    left: 0;
+
 }
 
 .hero__titlefirst {
@@ -9,8 +17,28 @@
     font-weight: 700;
     font-size: 223.005px;
     line-height: 272px;
+    white-space: nowrap;
+    color: white;
+    -webkit-text-stroke: 2px #3FBE6B;
 
-    color: #3FBE6B;
+    &>span {
+        color: #3FBE6B;
+    }
+
+    &:nth-child(1) {
+        margin-left: -14rem;
+    }
+
+    &:nth-child(2) {
+        margin-left: -43.2rem;
+    }
 }
 
-.hero__image {}
+
+.hero__image {
+    width: 945.34px;
+    height: 866.13px;
+    position: relative;
+    z-index: 2;
+    margin-left: -2rem;
+}
